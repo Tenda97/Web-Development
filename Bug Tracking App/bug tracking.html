@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bug Tracking System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Bug Tracking System</h1>
+
+  <form>
+    <label for="bugTitle">Bug Title:</label>
+    <input type="text" id="bugTitle" name="bugTitle" required>
+
+    <label for="bugDescription">Bug Description:</label>
+    <textarea id="bugDescription" name="bugDescription" required></textarea>
+
+    <label for="bugPriority">Bug Priority:</label>
+    <select id="bugPriority" name="bugPriority" required>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="userFullName">Your Full Name:</label>
+    <input type="text" id="userFullName" name="userFullName" required>
+
+    <label for="userEmail">Your Email:</label>
+    <input type="email" id="userEmail" name="userEmail" required>
+
+    <input type="submit" value="Submit Bug">
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Bug Title</th>
+        <th>Bug Description</th>
+        <th>Priority</th>
+        <th>Submitted By</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Bug data will be dynamically added here -->
+    </tbody>
+  </table>
+</body>
+</html>
